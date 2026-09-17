@@ -1,3 +1,5 @@
+Etant donné qu'il y'a pas eu de précision sur le langage à utiliser, nous avons utilisé python :
+
 Les trois fonctions définies pour représenter les directions sous forme de vecteurs unitaires :
 
 def Avant():
