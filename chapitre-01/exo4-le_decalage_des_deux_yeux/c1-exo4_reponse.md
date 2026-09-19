@@ -1,9 +1,26 @@
 L'expérience (Le saut du doigt) :
-Votre professeur a totalement raison : 
-- A 30 cm : 
-- A 1 mètre : Le saut est nettement plus petit.
-- A 3 mètres : Le saut devient presque invisible.
 
-Réponse à la question 1  : Ce qui distingue vos deux yeux, c'est leur position physique (ils sont décalés horizontalement). Ils ont donc deux points de vue légèrement différents sur le monde. C'est ce décalage angulaire (la parallaxe) qui permet à votre cerveau de calculer la distance et de créer la sensation de profondeur .
+| Distance de l'objet |   Décalage observé |
+| ------------------- | -----------------: |
+| 30 cm               |             6 cm   |
+| 1 m                 |             3 cm   |
+| 3 m                 |       1 cm environ |
 
-Ce chapitre va traiter de la stéréoscopie (le rendu pour chaque œil) et du défi de l'optimisation en VR. Il montre comment tromper le cerveau humain en calculant deux points de vue différents (matrices de vue gauche et droite) dans un temps record (le budget de quelques millisecondes) pour éviter la cinétose (le mal de la VR).
+Les deux yeux sont séparés l'un de l'autre et ne regardent donc pas le doigt exactement depuis le même point de vue. Chaque œil reçoit ainsi une image légèrement différente du doigt. Cela crée un décalage entre les deux images. Nos mesures le montrent : le décalage est d'environ 6 cm à 30 cm, 3 cm à 1 m et 1 cm à 3 m. On constate donc que le décalage diminue lorsque la distance de l'objet augmente.
+
+Puisque les deux yeux ne voient pas exactement la même image du monde réel, un casque VR doit fabriquer deux images différentes à chaque instant : une image destinée à l'œil gauche et une autre destinée à l'œil droit. Ces deux images reproduisent les deux points de vue différents des yeux afin de donner une perception de profondeur.
+
+D'après le premier exercice, le temps disponible dépend de la fréquence d'affichage :
+
+72 Hz → 13,9 ms par image
+90 Hz → 11,1 ms par image
+120 Hz → 8,3 ms par image
+
+Mais les différentes étapes matérielles consomment déjà environ 8,0 ms. Il reste donc pour l'application :
+
+à 72 Hz : 5,9 ms
+à 90 Hz : 3,1 ms
+à 120 Hz : 0,3 ms
+
+Ainsi, le programme VR doit calculer les deux vues stéréoscopiques dans un temps très court. À 120 Hz, il ne reste pratiquement plus de temps pour le calcul de l'application.
+
