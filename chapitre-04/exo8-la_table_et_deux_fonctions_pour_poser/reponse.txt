@@ -1,0 +1,18 @@
+Lignes avant les fonctions :
+
+Dans la première version de mon programme, les calculs de position des pieds et des objets étaient effectués directement dans le programme principal. 
+Il fallait calculer séparément la hauteur du centre de chaque élément, ce qui répétait les mêmes opérations. Le nombre de lignes doit être compté sur 
+cette version sans les deux fonctions de pose.
+
+Lignes apres :
+
+Dans mon programme actuel, j'ai défini les fonctions PoserAuSol et PoserSurTable. Le fichier poser.cpp contient 95 lignes, lignes vides comprises. 
+PoserAuSol place le centre d'un objet à la hauteur sy / 2, tandis que PoserSurTable place son centre à la hauteur H + sy / 2. Ces fonctions rendent 
+les calculs réutilisables et facilitent la correction du programme.
+
+L'erreur que la fonction m'evite :
+
+Les fonctions m'évitent de confondre la hauteur du dessus d'une table avec la hauteur du centre d'un objet. Pour ma table, le dessus 
+est à 750 mm et le plateau a une épaisseur de 60 mm : le centre du plateau est donc à 750 - 60 / 2 = 720 mm. La lampe mesure 400 mm de haut et repose 
+sur la table : son centre doit être à 750 + 400 / 2 = 950 mm. Un pied mesure 750 - 60 = 690 mm de haut et son centre se trouve à 690 / 2 = 345 mm. En utilisant les fonctions, 
+je centralise ces calculs et réduis le risque de répéter une erreur.
