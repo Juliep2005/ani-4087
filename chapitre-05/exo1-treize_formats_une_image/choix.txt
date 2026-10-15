@@ -1,0 +1,17 @@
+﻿Mon format pour un mur : le PNG.
+
+Pourquoi : sur ma photo de 1100 x 1280 pixels, j'ai mesuré 1 698 694 octets pour le PNG, 1 897 943 pour le QOI, 
+4 224 054 pour le BMP, 4 224 044 pour le TGA et 244 963 pour le JPEG. Le PNG et le QOI sont sans perte et se 
+relisent avec les mêmes dimensions que la photo ; le PNG est environ 10 % plus léger que le QOI. Le BMP et le 
+TGA ne sont pas compressés : ils pèsent 2,5 fois plus que le PNG. Le JPEG est le plus léger, environ sept fois 
+moins que le PNG, mais il compresse avec perte : il efface des détails fins et fait apparaître des blocs, et 
+chaque réenregistrement dégrade encore l'image. Pour une texture de mur, vue de près et répétée sur une grande 
+surface, je préfère garder un fichier sans perte. La taille sur le disque ne change pas la mémoire utilisée : u
+ne fois chargée, l'image coûte ses pixels bruts, soit environ 4,2 Mo en RGB ou 5,6 Mo en RGBA, quel que soit 
+le format. Le choix du format ne joue donc que sur le disque et le chargement.
+
+Ce qui m'a surpris : le moteur a écrit un fichier TGA complet de 4 224 044 octets, cohérent avec les pixels bruts,
+mais je n'ai pas réussi à le relire avec NkImage : sa ligne est notée illisible dans formats.txt. Un fichier 
+écrit n'est donc pas forcément un fichier relisible. J'ai aussi été surpris que le JPEG réécrit par le moteur
+(244 963 octets) soit plus gros que ma photo d'origine (164 219 octets) : le moteur doit l'encoder avec une 
+qualité plus élevée que celle du téléphone, mais je n'ai pas vérifié son réglage.
