@@ -1,0 +1,14 @@
+Texture utilisée : murs/mon_mur.jpeg
+
+Dimensions de la photographie source : 963 × 1280 pixels.
+
+Chargement effectué dans mur.cpp avec renderer->GetTextures()->Load(NkString("murs/mon_mur.jpeg")).
+
+Vérification du handle de texture : tex.IsValid().
+
+Résultat du test : la photographie apparaît correctement sur le mur auparavant rose. Le sol et les autres éléments de la salle conservent leur apparence initiale.
+
+Trace relevée dans logs/app.log :
+[NkTextureLibrary.cpp:735 in CreateFromBaked] -> [NkTextureLibrary] actif cuit televerse SANS decodage : 963x1280, 11 niveaux, 823120 o.
+
+Remarque : les dimensions de la trace du moteur correspondent à celles de la photographie source. Toutefois, cette ligne ne mentionne pas explicitement le nom mon_mur.jpeg.

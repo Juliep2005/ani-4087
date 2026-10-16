@@ -1,0 +1,4 @@
+﻿avant, projet : charge : 1, largeur : 1100, hauteur : 1280 (le fichier murs/mur.jpg est trouve depuis le dossier du projet)
+avant, Build : charge : 0, largeur : 0, hauteur : 0 (depuis Build/Bin/Release-Windows/chemin, murs/mur.jpg n'existe pas) ; journal : aucun, ce programme n'ecrit pas de logs
+apres, projet : chemin trouve : C:/Users/Dell/Desktop/AIA4/semestre1/Coder_pour_la_VR_l_XR_et_AR1/projet_ch5_ex6/murs/mur.jpg ; charge : 1, largeur : 1100, hauteur : 1280
+apres, Build : chemin trouve : C:/Users/Dell/Desktop/AIA4/semestre1/Coder_pour_la_VR_l_XR_et_AR1/projet_ch5_ex6/murs/mur.jpg ; charge : 1, largeur : 1100, hauteur : 1280

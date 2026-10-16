@@ -1,0 +1,5 @@
+Ce que rend Load : Load renvoie 0, ce qui indique que le chargement de l’image a échoué. IsValid() renvoie également 0, et la largeur ainsi que la hauteur valent 0, car aucune image valide n’a été chargée.
+
+Pourquoi rien ne plante : Le programme vérifie le résultat du chargement au lieu de supposer que l’image existe. L’échec est signalé par une valeur de retour et par le journal du moteur. L’exécution peut donc continuer sans utiliser les pixels d’une image invalide. Pour la texture, le moteur fournit un handle valide correspondant à sa texture d’erreur.
+
+Ce que montre le mur : Le mur apparaît rose après l’échec du chargement de murs/nexistepas.png. Le moteur utilise sa texture d’erreur en remplacement de l’image introuvable. Cela permet de continuer le rendu tout en rendant le problème visible.
