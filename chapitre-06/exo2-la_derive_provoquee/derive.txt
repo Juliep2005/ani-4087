@@ -1,0 +1,16 @@
+Observations réelles (temps affiché depuis le lancement)
+
+La souris a été déplacée au début de l'exécution. L'utilisateur confirme ne plus l'avoir touchée jusqu'à la fermeture avec Échap. Les relevés couvrent 11.1 s de temps d'exécution, de t = 1.0 s à t = 12.1 s. La durée d'immobilité n'a pas été chronométrée séparément; elle est donc rapportée par l'utilisateur et n'est pas mesurée indépendamment.
+
+t = 1.0 s, images = 53, brut = 0, lacet = 0.0 deg
+t = 2.0 s, images = 114, brut = 0, lacet = 0.0 deg
+t = 3.0 s, images = 175, brut = 0, lacet = 0.0 deg
+t = 4.0 s, images = 235, brut = 3, lacet = 9.9 deg
+t = 5.1 s, images = 296, brut = 1, lacet = 20.1 deg
+t = 6.1 s, images = 357, brut = 0, lacet = 20.4 deg
+t = 7.1 s, images = 418, brut = 0, lacet = 20.4 deg
+t = 8.1 s, images = 478, brut = 0, lacet = 20.4 deg
+t = 9.1 s, images = 539, brut = 0, lacet = 20.4 deg
+t = 10.1 s, images = 600, brut = 0, lacet = 20.4 deg
+t = 11.1 s, images = 660, brut = 0, lacet = 20.4 deg
+t = 12.1 s, images = 721, brut = 0, lacet = 20.4 deg

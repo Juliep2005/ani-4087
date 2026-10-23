@@ -1,0 +1,7 @@
+Ma sensibilite : 0.0020 rad/compte.
+
+Vitesse de dérive : entre t = 6.1 s et t = 12.1 s, la vitesse moyenne observée est (20.4 - 20.4) / (12.1 - 6.1) = 0.0 deg/s, à la précision des relevés.
+
+D'ou vient ce chiffre : C'est la variation du lacet entre ces deux relevés divisée par le temps écoulé, soit 0.0 degré en 6.0 secondes. Cette vitesse moyenne décrit cet intervalle; elle ne représente pas le déplacement brut de la souris.
+
+Pourquoi elle ne s’arrête pas : Le programme ajoute à chaque image la dernière valeur de NkInput.MouseRawDeltaX(), au lieu de consommer chaque déplacement une seule fois. Tant que cette valeur reste non nulle, elle peut être ajoutée de nouveau à chaque image; lorsqu'elle vaut zéro, le lacet cesse d'évoluer. Dans ces mesures, brut vaut 3 puis 1 aux relevés de 4.0 s et 5.1 s, avec une hausse du lacet, puis vaut 0 et le lacet reste à 20.4 deg de 6.1 s à 12.1 s. La moyenne sur cette dernière période est donc nulle; les données ne montrent pas de dérive continue après 6.1 s. L'utilisateur confirme ne plus avoir touché la souris après le mouvement initial jusqu'à la fermeture; les mesures couvrent plus de dix secondes de temps affiché, mais l'instant d'arrêt n'a pas été chronométré séparément.

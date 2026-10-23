@@ -1,0 +1,5 @@
+Pourquoi cette direction : La salle regarde initialement vers l'avant, selon -Z, et sa droite est +X. Avec la convention de Regard(), un lacet positif de 90 degres tourne vers la gauche; la direction attendue est donc (-1, 0, 0). Cette valeur attendue est écrite directement dans le test, sans la recalculer avec Regard().
+
+Pourquoi une tolérance : Les sinus et cosinus sont calculés en virgule flottante et peuvent produire de petits écarts d'arrondi. Le test compare chaque composante à sa valeur attendue avec une tolérance de 0.001, plutôt qu'avec une égalité exacte.
+
+Ce que le test ne prouve pas : Le mode MASALLE_TEST vérifie le setter de pose et les vecteurs d'orientation de plusieurs cas, y compris le sens inverse du lacet. Il ne valide pas à lui seul le rendu visuel de la salle ni le fonctionnement manuel de la capture de souris; ces comportements ne sont pas simulés par ce test automatisé.

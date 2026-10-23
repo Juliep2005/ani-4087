@@ -1,0 +1,6 @@
+lacet 90, tangage 0, obtenu (-1.0, 0.0, 0.0), OK - quart de tour gauche
+lacet -90, tangage 0, obtenu (1.0, 0.0, 0.0), OK - quart de tour droite
+lacet 0, tangage 30, obtenu (-0.0, 0.5, -0.9), OK - tangage vers le haut
+lacet 45, tangage 30, obtenu (-0.6, 0.5, -0.6), OK - lacet et tangage combines
+Resultat des tests : 4/4 reussis
+Code de sortie : 0

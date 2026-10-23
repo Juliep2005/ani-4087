@@ -1,0 +1,23 @@
+[2026-10-23 23:34:12.158] [INF] [default] [NkGpuPolicy.cpp:112 in ApplyPreContext] -> [NkRHI_GpuPolicy] api=Vulkan pref=Default vendor=Any adapterIndex=-1
+
+[2026-10-23 23:34:13.172] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_surface
+[2026-10-23 23:34:13.172] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_win32_surface
+[2026-10-23 23:34:13.172] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_external_memory_capabilities
+[2026-10-23 23:34:13.172] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_external_semaphore_capabilities
+[2026-10-23 23:34:13.173] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_external_fence_capabilities
+[2026-10-23 23:34:13.173] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_get_physical_device_properties2
+[2026-10-23 23:34:13.173] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_get_surface_capabilities2
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_device_group_creation
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_EXT_swapchain_colorspace
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_display
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_get_display_properties2
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_surface_protected_capabilities
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_EXT_debug_report
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_EXT_debug_utils
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_EXT_direct_mode_display
+[2026-10-23 23:34:13.174] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_EXT_surface_maintenance1
+[2026-10-23 23:34:13.175] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_NV_external_memory_capabilities
+[2026-10-23 23:34:13.175] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_KHR_portability_enumeration
+[2026-10-23 23:34:13.175] [INF] [default] [NkVulkanDevice.cpp:181 in Initialize] -> VK_LUNARG_direct_driver_loading
+[2026-10-23 23:34:13.183] [INF] [default] [NkVulkanDevice.cpp:223 in Initialize] -> VK_LAYER_NV_optimus
+[2026-10-23 23:34:13.183] [INF] [default] [NkVulkanDevice.cpp:223 in Initialize] -> VK_LAYER_NV_present

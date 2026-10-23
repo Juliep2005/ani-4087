@@ -1,0 +1,18 @@
+L'application compare deux ordres de composition quaternionique pour orienter
+la camera. Le produit lacet * tangage applique le facteur de droite en premier;
+le produit tangage * lacet inverse l'ordre des rotations. La direction avant
+est calculee en appliquant le quaternion compose au vecteur (0, 0, -1), et le
+vecteur vertical de la camera est transforme par le meme quaternion.
+
+Diagnostic de l'ancienne version : P et Q ont ete recus. Apres Q, le journal
+indiquait lacet = 6.87 deg et tangage = -2.01 deg; l'utilisateur n'a pas
+remarque de difference visuelle. Cet essai aux petits angles ne remplace pas
+le tour complet demande par l'enonce.
+
+Mise en conformite : le tangage est maintenant fixe a 30 degres, la souris
+pilote uniquement le lacet, et le vecteur haut est transforme par le meme
+quaternion que le regard. Lors des deux tours manuels rapportes ensuite,
+l'utilisateur a trouve la porte, l'horizon et le plafond similaires, tout en
+confirmant le changement d'ordre apres Q. Les angles consignes aux appuis P/Q
+vont de 0.20 a 13.77 deg; ils n'etablissent pas un tour de 360 deg. Cette
+observation visuelle est consignee sans conclure a une equivalence mathematique.

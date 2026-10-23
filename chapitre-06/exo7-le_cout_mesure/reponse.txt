@@ -1,0 +1,26 @@
+Les douze mesures de mesures.txt ont ete produites par cout.exe, avec un
+million d'iterations pour chaque methode et trois repetitions par configuration.
+Chaque iteration fait varier le lacet et le tangage, construit une orientation,
+additionne ses quatre composantes, puis affiche ces sommes apres le chronometrage.
+
+Moyennes mesurees :
+- Debug, matrices : 816.4648 ms, soit environ 816.5 ns par construction.
+- Debug, quaternions : 157.9960 ms, soit environ 158.0 ns par construction.
+- Release, matrices : 172.6505 ms, soit environ 172.7 ns par construction.
+- Release, quaternions : 106.2292 ms, soit environ 106.2 ns par construction.
+
+Pour ces moyennes, Release est environ 4.73 fois plus rapide que Debug pour
+les matrices et 1.49 fois plus rapide pour les quaternions.
+La comparaison ponctuelle a lacet 45 deg et tangage 30 deg donne le meme
+quaternion avec les deux methodes; l'ecart maximal affiche est 0.00000012.
+Dans ces mesures Release, la construction quaternionique directe est environ
+1.63 fois plus rapide que la construction via matrices, soit un ecart moyen
+d'environ 66.4 ns par orientation. Par rapport a une image de 11 ms (environ
+90 images/s), cet ecart represente environ 0.00060 % du budget d'une image.
+Pour une seule orientation par image, la difference est donc negligeable a
+l'echelle du temps total d'une image.
+
+Ces valeurs concernent cette machine, cette version de Nkentseu et cette
+configuration de compilation. Les mesures Debug varient sensiblement entre
+repetitions. Les sommes sont des accumulateurs destinés a rendre le calcul
+observable; elles ne servent pas a comparer les representations quaternioniques.

@@ -1,0 +1,7 @@
+Tests manuels effectués
+
+- E : le curseur est masqué et capturé.
+- Appuis répétés sur E : le curseur reste capturé et masqué.
+- Échap : le curseur est libéré et redevient visible.
+- En mode capturé : le curseur reste confiné à la fenêtre.
+- Fermeture de la fenêtre avec la croix : la fenêtre se ferme et le curseur redevient normalement utilisable sur le bureau Windows.

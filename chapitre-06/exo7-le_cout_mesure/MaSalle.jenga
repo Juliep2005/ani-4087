@@ -1,0 +1,25 @@
+from Jenga import *
+from Jenga.GlobalToolchains import RegisterJengaGlobalToolchains
+
+with workspace("MaSalle"):
+    RegisterJengaGlobalToolchains()
+    configurations(["Debug", "Release"])
+    targetoses([TargetOS.WINDOWS])
+    targetarchs([TargetArch.X86_64])
+    useconfig("../../../projet/Kit/R3D.jenga")
+
+    with project("cout"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location(".")
+        files(["cout.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
+        ])
+
+        with filter("config:Release"):
+            defines(["MASALLE_RELEASE"])
+            optimize("Speed")

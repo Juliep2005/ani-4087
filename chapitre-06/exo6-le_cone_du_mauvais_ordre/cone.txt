@@ -1,0 +1,5 @@
+Ce que fait le monde : Lors des deux tours manuels rapportes, la porte, l'horizon et le plafond ont semble similaires dans les deux ordres; l'utilisateur a toutefois constate le changement de rotation apres Q. Le journal P/Q consigne des lacets entre 0.20 et 13.77 deg aux instants echantillonnes, sans ligne a 360 deg. Je note donc l'absence de difference visuelle nette comme observation, sans conclure que les compositions sont equivalentes. Le calcul donne une hauteur constante dans un ordre et variable dans l'autre.
+
+Autour de quel axe : L'ordre fautif tangage*lacet fait intervenir l'axe X fixe de la salle. Les hauteurs calculees passent de 30 degres a 0 degre au lacet 90, puis a -30 degres au lacet 180. Dans l'ordre lacet*tangage, elles restent a 30 degres.
+
+L'ordre fautif : tangage*lacet. Le facteur de droite agit en premier : le lacet tourne d'abord autour de Y, puis le tangage s'applique autour de l'axe X fixe. L'ordre lacet*tangage conserve au contraire le tangage de la tete pendant le lacet.

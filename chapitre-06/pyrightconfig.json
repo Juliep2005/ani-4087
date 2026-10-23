@@ -1,0 +1,22 @@
+{
+    "include": [
+        "**/*.py",
+        "**/*.jenga"
+    ],
+    "exclude": [
+        "Build/**",
+        "Externals/**",
+        ".vscode/**",
+        "**/__pycache__",
+        "**/node_modules"
+    ],
+    "pythonVersion": "3.8",
+    "reportMissingImports": "warning",
+    "reportUndefinedVariable": "warning",
+    "reportWildcardImportFromLibrary": "none",
+    "extraPaths": [
+        "C:/Users/Dell/Desktop/AIA4/semestre1/Coder_pour_la_VR_l_XR_et_AR1/Jenga",
+        ".jenga/typings"
+    ],
+    "_jengaIdeConfigVersion": "b71bfa8c3f94c79e"
+}

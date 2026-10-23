@@ -1,0 +1,5 @@
+Le vecteur avant de la salle est (0, 0, -1). Pour un lacet de 45 deg et un tangage de 30 deg, l'execution donne (-0.6124, 0.5000, -0.6124) avec le produit quaternionique lacet * tangage, et (-0.7071, 0.3536, -0.6124) avec tangage * lacet. L'ordre des rotations change donc le regard : les rotations ne commutent pas.
+
+La matrice RotationY(lacet) * RotationX(tangage) donne (-0.6124, 0.5000, -0.6124), identique au premier produit quaternionique pour cet angle. Dans la convention de Nkentseu, le facteur de droite agit en premier; le produit quaternionique lacet * tangage applique donc d'abord le tangage, puis le lacet. Cette comparaison est celle des valeurs affichees par le programme, arrondies a quatre decimales.
+
+Verification : la cible Debug a ete reconstruite avec Jenga. L'executable a ensuite ete lance; les sept lignes de regards.txt proviennent de sa sortie reelle. Le renderer s'est initialise, la fenetre est restee reactive, puis sa fermeture a ete demandee et l'application s'est arretee. Aucun test manuel de deplacement de souris n'est consigne ici.

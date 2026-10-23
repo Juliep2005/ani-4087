@@ -1,0 +1,17 @@
+Test manuel a effectuer avant de consigner des observations.
+
+Dans la fenetre, effectuer lentement un tour complet avec l'ordre initial,
+noter le regard avec P, puis appuyer sur Q et repeter avec l'autre ordre.
+Conserver les lignes de console imprimees par P. Aucune mesure manuelle n'est
+encore consignee dans ce fichier.
+
+Diagnostic de l'ancienne version : P et Q ont bien ete recus. Apres Q, la
+sortie indiquait lacet = 6.87 deg et tangage = -2.01 deg. Aucun changement
+visuel n'a ete remarque.
+
+Test manuel de la version corrigee : l'utilisateur rapporte deux tours
+horizontaux complets, un dans chaque ordre. La porte, l'horizon et le plafond
+ont semble similaires; Q a bien change l'ordre. Les valeurs presentes aux
+appuis P/Q du journal vont de 0.20 a 13.77 deg de lacet et ne consignent pas
+360 deg. Le constat visuel est conserve tel quel, mais ne permet pas de
+conclure que les deux compositions sont mathematiquement equivalentes.

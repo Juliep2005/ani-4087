@@ -1,0 +1,18 @@
+Test manuel de cette execution : l'utilisateur confirme avoir deplace la souris dans un seul sens, puis n'avoir touche ni la souris ni le pave tactile pendant dix secondes completes. L'application est restee ouverte pendant le test.
+
+Le temps t est celui ecoule depuis le lancement, pas depuis le debut du test. Les angles ci-dessous sont recopies de la sortie reelle. Les valeurs changent encore pendant le mouvement, puis restent constantes apres t = 162.0 s pour les versions « lu » et « vide ».
+
+t = 159.9 s, lu = 10.0, vide = 17.2, sans vidage = 348.0
+t = 160.9 s, lu = 10.0, vide = 17.2, sans vidage = 1379.3
+t = 162.0 s, lu = 20.7, vide = 34.8, sans vidage = 2851.0
+t = 163.0 s, lu = 20.7, vide = 34.8, sans vidage = 4976.0
+t = 164.0 s, lu = 20.7, vide = 34.8, sans vidage = 7066.2
+t = 165.0 s, lu = 20.7, vide = 34.8, sans vidage = 9191.2
+t = 166.0 s, lu = 20.7, vide = 34.8, sans vidage = 11281.3
+t = 167.0 s, lu = 20.7, vide = 34.8, sans vidage = 13406.3
+t = 168.0 s, lu = 20.7, vide = 34.8, sans vidage = 15531.3
+t = 169.0 s, lu = 20.7, vide = 34.8, sans vidage = 17621.5
+t = 170.0 s, lu = 20.7, vide = 34.8, sans vidage = 19746.5
+t = 171.0 s, lu = 20.7, vide = 34.8, sans vidage = 21836.6
+
+Les rapports de t = 163.0 s a t = 171.0 s couvrent huit secondes d'horodatage. L'utilisateur confirme dix secondes completes sans contact; les valeurs enregistrees montrent en outre que « lu » et « vide » ne changent plus apres t = 162.0 s, tandis que « sans vidage » continue d'augmenter.

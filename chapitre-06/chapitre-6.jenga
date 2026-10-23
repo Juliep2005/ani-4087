@@ -1,0 +1,77 @@
+from Jenga import *
+from Jenga.GlobalToolchains import RegisterJengaGlobalToolchains
+
+with workspace("Chapitre-6"):
+    RegisterJengaGlobalToolchains()
+    configurations(["Debug", "Release"])
+    targetoses([TargetOS.WINDOWS])
+    targetarchs([TargetArch.X86_64])
+    useconfig("../../projet/Kit/R3D.jenga")
+
+    with project("exo1-pointeur-capture"):
+        windowedapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo1-le_pointeur_capture")
+        files(["pointeur.cpp"])
+        user3d()
+
+    with project("exo2-derive-provoquee"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo2-la_derive_provoquee")
+        files(["derive.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File deploy_renderer_resources.ps1 "%{prj.targetdir}"'
+        ])
+
+    with project("exo3-accumuler-puis-vider"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo3-accumuler_puis_vider")
+        files(["accumulation.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
+        ])
+
+    with project("exo4-les-crochets-de-tests"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo4-les_crochets_de_tests")
+        files(["tete.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
+        ])
+
+    with project("exo5-les-deux-ordres-et-la-matrice"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo5-les_deux_ordres_et_la_matrice")
+        files(["ordre.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
+        ])
+
+    with project("exo6-le-cone-du-mauvais-ordre"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo6-le_cone_du_mauvais_ordre")
+        files(["cone.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
+        ])

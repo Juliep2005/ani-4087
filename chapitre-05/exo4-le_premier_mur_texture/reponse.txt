@@ -1,0 +1,8 @@
+Ma texture : J’ai utilisé ma propre photographie d’un mur peint, enregistrée dans le fichier `murs/mon_mur.jpeg`.
+Je l’ai chargée avec `renderer->GetTextures()->Load(...)`, puis associée à un matériau PBR métallique.
+
+Ce que le mur a gagné : Le mur, qui était auparavant rose et uniforme, présente maintenant la texture de ma photographie.
+Il possède davantage de détails visuels et un aspect plus réaliste. Le sol et les autres éléments de la salle conservent leur apparence initiale.
+
+Ce qui m'a bloqué : J’ai dû corriger le chemin de la texture et vérifier que le fichier était correctement chargé. 
+L’application de la photographie au matériau du mur a ensuite fonctionné. Le journal ne m’a pas encore permis d’identifier avec certitude la ligne correspondant au chargement de ma photo.
