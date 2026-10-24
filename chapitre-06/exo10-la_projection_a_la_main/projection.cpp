@@ -41,7 +41,7 @@ NkMat4f Projection(float left, float right, float up, float down,
     const float tanWidth = tanRight - tanLeft;
     const float tanHeight = tanUp - tanDown;
 
-    NkMat4f result;
+    NkMat4f result = NkMat4f::Zero();
     result.mat[0][0] = 2.0f / tanWidth;
     result.mat[1][1] = 2.0f / tanHeight;
     result.mat[2][0] = (tanRight + tanLeft) / tanWidth;
@@ -165,7 +165,7 @@ int main(int argc, char** argv) {
             stderr,
             "Usage: projection.exe <gauche_rad> <droite_rad> "
             "<haut_rad> <bas_rad>\n"
-            "Fournissez les quatre angles mesures par le runtime Quest; "
+            "Fournissez les quatre angles Quest en radians; "
             "les angles gauche et bas sont negatifs.\n"
             "Pour verifier seulement l'epreuve symetrique: "
             "projection.exe --symmetric-only\n");
