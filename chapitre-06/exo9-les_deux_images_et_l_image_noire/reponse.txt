@@ -1,0 +1,5 @@
+Ce qui diffère le plus : 46 578 pixels sur 460 800 dépassent un écart de 1 entre les deux vues stéréo, avec un écart maximal de 102 niveaux. La différence amplifiée apparaît surtout aux contours des objets et des murs.
+
+Pourquoi là : les deux caméras sont séparées de 63 mm. Cette translation produit une parallaxe : les objets proches se déplacent davantage dans l’image que les objets éloignés. Les écarts se concentrent donc aux silhouettes et aux zones où les surfaces se recouvrent différemment.
+
+Ce que prouve le noir : avec les deux caméras placées au même point, aucun pixel ne dépasse le seuil de 1 et l'écart maximal est nul. Dans cette exécution, les deux rendus sont identiques pixel par pixel ; la différence de la première comparaison vient donc du décalage des yeux. Le noir ne prouverait pas, à lui seul, que la scène est correcte : deux images vides pourraient aussi avoir une différence nulle.

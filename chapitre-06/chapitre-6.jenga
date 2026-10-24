@@ -44,7 +44,7 @@ with workspace("Chapitre-6"):
         consoleapp()
         language("C++")
         cppdialect("C++17")
-        location("exo4-les_crochets_de_tests")
+        location("exo4-les_crochets_de_test")
         files(["tete.cpp"])
         user3d()
         linkoptions(["-Wl,--allow-multiple-definition"])
@@ -57,7 +57,7 @@ with workspace("Chapitre-6"):
         language("C++")
         cppdialect("C++17")
         location("exo5-les_deux_ordres_et_la_matrice")
-        files(["ordre.cpp"])
+        files(["ordres.cpp"])
         user3d()
         linkoptions(["-Wl,--allow-multiple-definition"])
         postbuild([
@@ -75,3 +75,24 @@ with workspace("Chapitre-6"):
         postbuild([
             'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
         ])
+
+    with project("exo9-les-deux-images-et-image-noire"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo9-les_deux_images_et_l_image_noire")
+        files(["deux-yeux.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])
+        postbuild([
+            'powershell -NoProfile -ExecutionPolicy Bypass -File "../exo2-la_derive_provoquee/deploy_renderer_resources.ps1" "%{prj.targetdir}"'
+        ])
+
+    with project("exo10-la-projection-a-la-main"):
+        consoleapp()
+        language("C++")
+        cppdialect("C++17")
+        location("exo10-la_projection_a_la_main")
+        files(["projection.cpp"])
+        user3d()
+        linkoptions(["-Wl,--allow-multiple-definition"])

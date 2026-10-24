@@ -1,0 +1,5 @@
+Quand les deux méthodes s'accordent : En pose neutre, la droite de la tete est l'axe X du monde. Les deux facons de placer les yeux donnent donc les memes positions et un ecart de 0 mm.
+
+Quand elles divergent : En roulis de 30 degres, la droite de la tete s'incline avec l'orientation tandis que l'axe X du monde reste horizontal; les positions de l'oeil gauche sont separees de 16.3 mm. En lacet de 90 degres, la droite de la tete pointe selon -Z, alors que la methode monde reste sur X; l'ecart atteint 44.5 mm.
+
+Ce qu'un visiteur sentirait : Decaler les yeux selon l'axe du monde au lieu de la droite de la tete ne respecte plus l'orientation du casque. L'ecart entre les vues gauche et droite devient incoherent avec la pose, ce qui peut deformer la perception du relief et rendre la scene inconfortable.
