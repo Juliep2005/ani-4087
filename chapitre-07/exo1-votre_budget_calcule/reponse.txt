@@ -1,0 +1,5 @@
+La fréquence de mon écran : les intervalles mesurés ont une médiane proche de 16.67 ms, soit environ 60 Hz. Je n'ai pas pu confronter ce résultat aux paramètres d'affichage Windows.
+
+La cadence que je tiens : avec attente, moyenne 16.710 ms, médiane 16.643 ms et maximum 18.720 ms; avec NK_VK_MAILBOX=1 sous Vulkan, moyenne 16.812 ms, médiane 16.681 ms et maximum 21.774 ms. La seconde série n'est pas plus rapide sur cette salle et ce poste.
+
+Ce que dit le maximum : les deux maxima dépassent la moyenne et le budget nominal d'environ 16.67 ms à 60 Hz; la moyenne seule ne garantit donc pas que chaque image tient ce rythme.

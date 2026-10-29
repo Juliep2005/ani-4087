@@ -1,0 +1,49 @@
+from Jenga import *
+from Jenga.GlobalToolchains import RegisterJengaGlobalToolchains
+
+import sys
+
+with workspace("Chapitre7", location="."):
+    RegisterJengaGlobalToolchains()
+    configurations(["Debug", "Release"])
+    targetoses([TargetOS.WINDOWS])
+    targetarchs([TargetArch.X86_64])
+    useconfig("../../projet/Kit/R3D.jenga")
+
+    def ajouter_exercice(nom, dossier, source, avec_salle=False):
+        with project(nom):
+            consoleapp()
+            language("C++")
+            cppdialect("C++17")
+            location(dossier)
+            files([source])
+            user3d()
+
+            with filter("system:Windows"):
+                ldflags(["-static", "-Wl,--allow-multiple-definition"])
+
+            objdir("%{wks.location}/Build/Obj/%{cfg.buildcfg}-%{cfg.system}/%{prj.name}")
+            targetdir("%{wks.location}/Build/Bin/%{cfg.buildcfg}-%{cfg.system}/%{prj.name}")
+
+            if avec_salle:
+                copie = (
+                    '"' + sys.executable + '" -c "import shutil,sys; '
+                    'shutil.copytree(sys.argv[1],sys.argv[2],dirs_exist_ok=True)" '
+                    '"' + KIT_ROOT + '/Resources/NKRenderer/Shaders" '
+                )
+                postbuild([
+                    copie + '"%{wks.location}/' + dossier + '/Resources/NKRenderer/Shaders"',
+                    copie + '"%{wks.location}/Build/Bin/%{cfg.buildcfg}-%{cfg.system}/'
+                    '%{prj.name}/Resources/NKRenderer/Shaders"',
+                ])
+
+    ajouter_exercice("exo1_budget", "exo1-votre_budget_calcule", "budget.cpp", True)
+    ajouter_exercice("exo2_instant", "exo2-1_instant_predit_et_sa_periode", "instant.cpp", True)
+    ajouter_exercice("exo3_vitesse", "exo3-mesurer_une_vitesse", "vitesse.cpp", True)
+    ajouter_exercice("exo4_chemin", "exo4-le_chemin_long_provoque", "chemin.cpp", True)
+    ajouter_exercice("exo5_prediction", "exo5-predire_et_comparer", "prediction.cpp", True)
+    ajouter_exercice("exo6_gestes", "exo6-ce_que_la_prediction_vous_apporte", "gestes.cpp")
+    ajouter_exercice("exo7_latence", "exo7-la_latence_injectee_et_la_borne", "latence.cpp")
+    ajouter_exercice("exo8_stabilite", "exo8-la_stabilite_mesuree", "stabilite.cpp", True)
+    ajouter_exercice("exo9_verrou", "exo9-le_verrou_de_demi_cadence", "verrou.cpp", True)
+    ajouter_exercice("exo10_modeles", "exo10-un_meilleur_modele", "modeles.cpp")

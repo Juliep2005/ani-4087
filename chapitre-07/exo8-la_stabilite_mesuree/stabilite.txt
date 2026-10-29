@@ -1,0 +1,1 @@
+ecran : 2301 images, moyenne 17.946 ms, ecart type 33.492 ms, max 1618.866 ms, hors budget 2301

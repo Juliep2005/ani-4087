@@ -1,0 +1,6 @@
+/.jenga/
+/Build/
+/logs/
+/pyrightconfig.json
+/exo*/Resources/NKRenderer/Shaders/
+/COMMANDES_CHAPITRE7.md/

@@ -1,0 +1,5 @@
+Le gain : non chiffrable sans les 1 000 comparaisons sur un mouvement de souris réel.
+
+D'où vient l'erreur qui reste : elle dépend notamment des changements d'accélération que le modèle à vitesse constante n'anticipe pas et du bruit de la souris; aucune mesure ne permet ici d'en attribuer la part.
+
+Le facteur dix : l'affirmation n'est pas validée; il faut comparer le rapport des deux erreurs moyennes mesurées.

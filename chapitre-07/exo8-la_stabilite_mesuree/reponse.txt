@@ -1,0 +1,5 @@
+Le nombre qui compte : les 3 557 intervalles écran et les 3 515 intervalles avec NK_VK_MAILBOX=1 dépassent tous le budget de 11.111 ms à 90 Hz; la cadence observée est donc hors de ce budget à chaque intervalle.
+
+Pourquoi pas la moyenne : l'écran a une moyenne de 16.864 ms mais un maximum de 48.573 ms; avec NK_VK_MAILBOX=1, la moyenne est de 17.066 ms et le maximum de 57.363 ms. Les maxima et écarts types (0.777 ms et 1.990 ms) révèlent des pointes que la moyenne seule cache.
+
+Ce que l'écran change : les journaux confirment Vulkan et la série avec NK_VK_MAILBOX=1 a été exécutée, mais son résultat n'est pas plus rapide et sa dispersion est plus grande. Le journal ne consigne pas le mode de présentation effectif; je ne peux donc pas affirmer que le pilote a accepté MAILBOX.

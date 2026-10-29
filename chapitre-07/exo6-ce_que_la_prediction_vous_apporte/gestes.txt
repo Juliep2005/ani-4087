@@ -1,0 +1,3 @@
+rapide (90.000 deg en 400.000 ms) : avec 0.330 deg, sans 3.103 deg, rapport 9.400
+lent (45.000 deg en 1500.000 ms) : avec 0.001 deg, sans 0.410 deg, rapport 651.674
+demi-tour (180.000 deg en 250.000 ms) : avec 1.645 deg, sans 9.474 deg, rapport 5.760

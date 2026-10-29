@@ -1,0 +1,5 @@
+Où elle cesse de rattraper : avec le critère « erreur moyenne prédite au moins aussi grande que l'erreur sans prédiction », cela n'arrive pas entre 0 et 80 ms dans la simulation. À l'horizon non borné observé (888.889 ms), le lacet prédit vaut -88.813 deg contre 90 deg réel : l'extrapolation devient pire que garder la pose retardée.
+
+L'horizon sans borne : le tableau circulaire de 64 poses à 72 Hz ne conserve que 63 périodes, soit 875 ms. Pour la latence demandée d'une seconde, il rend donc l'échantillon disponible le plus ancien, à 1.125 s; l'image correspondante a un horizon de 888.889 ms. Avec la borne, cet horizon est ramené à 100 ms.
+
+Ce que verrait le casque : sans borne, l'orientation peut partir presque à l'opposé du vrai lacet; avec la borne, l'erreur est réduite mais reste de 41.742 deg dans cet exemple (48.258 deg prédit contre 90 deg réel). Il s'agit d'une simulation, pas d'une mesure sur casque.

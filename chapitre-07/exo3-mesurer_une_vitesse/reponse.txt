@@ -1,0 +1,5 @@
+La série programmée : 20 images mesurées avec MASALLE_TOUR=30; vitesse Y moyenne 30.000 deg/s (min 29.998, max 30.012), dt entre 16.591 et 18.824 ms.
+
+La série à la souris : non mesurée, car elle nécessite un mouvement physique réel de la souris. Aucune valeur n'est inventée.
+
+D'où vient le bruit : dans la série programmée, la vitesse reste stable alors que dt varie avec le rythme des images. Sans série à la souris, la contribution du bruit d'entrée ne peut pas être quantifiée ni séparée de la variation d'échantillonnage.

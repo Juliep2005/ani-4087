@@ -1,0 +1,24 @@
+72 Hz: maintenant = 2.239 ms, predit = 16.127 ms, ecart = 13.889 ms
+72 Hz: maintenant = 194.363 ms, predit = 208.252 ms, ecart = 13.889 ms
+72 Hz: maintenant = 215.729 ms, predit = 229.618 ms, ecart = 13.889 ms
+72 Hz: maintenant = 234.289 ms, predit = 248.177 ms, ecart = 13.889 ms
+72 Hz: maintenant = 252.460 ms, predit = 266.349 ms, ecart = 13.889 ms
+72 Hz: maintenant = 271.006 ms, predit = 284.895 ms, ecart = 13.889 ms
+72 Hz: maintenant = 289.216 ms, predit = 303.105 ms, ecart = 13.889 ms
+72 Hz: maintenant = 309.331 ms, predit = 323.220 ms, ecart = 13.889 ms
+72 Hz: maintenant = 329.711 ms, predit = 343.599 ms, ecart = 13.889 ms
+72 Hz: maintenant = 347.833 ms, predit = 361.722 ms, ecart = 13.889 ms
+72 Hz: maintenant = 364.944 ms, predit = 378.833 ms, ecart = 13.889 ms
+72 Hz: maintenant = 381.662 ms, predit = 395.551 ms, ecart = 13.889 ms
+72 Hz: maintenant = 398.529 ms, predit = 412.417 ms, ecart = 13.889 ms
+72 Hz: maintenant = 444.743 ms, predit = 458.632 ms, ecart = 13.889 ms
+72 Hz: maintenant = 463.455 ms, predit = 477.344 ms, ecart = 13.889 ms
+72 Hz: maintenant = 480.320 ms, predit = 494.209 ms, ecart = 13.889 ms
+72 Hz: maintenant = 497.257 ms, predit = 511.146 ms, ecart = 13.889 ms
+72 Hz: maintenant = 514.387 ms, predit = 528.276 ms, ecart = 13.889 ms
+72 Hz: maintenant = 531.649 ms, predit = 545.538 ms, ecart = 13.889 ms
+72 Hz: maintenant = 548.840 ms, predit = 562.729 ms, ecart = 13.889 ms
+hz = 72.000, periode = 13.889 ms, reel - predit = 5.338 ms
+hz = 60.000, periode = 16.667 ms, reel - predit = 0.637 ms
+hz = 90.000, periode = 11.111 ms, reel - predit = 5.980 ms
+hz = 120.000, periode = 8.333 ms, reel - predit = 8.513 ms

@@ -1,0 +1,5 @@
+Ce qui est stable : le calcul prédit ajoute une période fixe, mais le début réel suivant ne suit pas exactement cette valeur. Les moyennes réel-prédit mesurées sont +3.219 ms à 72 Hz, +0.112 ms à 60 Hz, +6.459 ms à 90 Hz et +8.970 ms à 120 Hz.
+
+Un divisé par la cadence : 13.889 ms à 72 Hz, 16.667 ms à 60 Hz, 11.111 ms à 90 Hz et 8.333 ms à 120 Hz; ces périodes correspondent aux quatre paramètres testés.
+
+La période de mon écran : dans l'essai à 60 Hz, 16.667 + 0.112 = 16.779 ms, soit environ 59.6 Hz. Les autres essais montrent des écarts plus grands; les paramètres Windows n'ont pas été vérifiés indépendamment.

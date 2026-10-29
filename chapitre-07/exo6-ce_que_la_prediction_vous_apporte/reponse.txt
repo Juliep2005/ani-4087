@@ -1,0 +1,5 @@
+Mes deux gestes : sur les gestes simulés à 72 Hz, le modèle réduit l'erreur moyenne du rapide de 3.103 à 0.330 deg (rapport 9.40) et du lent de 0.410 à 0.001 deg (rapport 651.67).
+
+Où elle aide le moins : le demi-tour de 180 deg en 250 ms, où le rapport n'est que 5.76 (9.474 deg sans prédiction contre 1.645 deg avec).
+
+Pourquoi là : la prédiction prolonge la vitesse estimée depuis les poses précédentes. Lors d'un geste brusque, cette vitesse décrit moins bien la prochaine période, car l'accélération et le freinage changent rapidement.

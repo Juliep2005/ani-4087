@@ -1,0 +1,7 @@
+L'image fautive : l'image 519, au lacet de 180.304 deg, a delta.w = -0.999996 et donne -20.000 deg/s au lieu de +20.001 deg/s à l'image 518. Avec le test, cette même image donne +20.000 deg/s.
+
+Le rapport : vitesse fautive / vitesse précédente = -20.000 / 20.001, soit environ -1.00; la grandeur reste presque identique, mais le signe s'inverse.
+
+Pourquoi à ce lacet : au passage par 180 deg, la représentation retenue passe d'un hémisphère du quaternion à l'autre. Dans le kit local, la conversion matrice-quaternion reste continue; le programme choisit donc explicitement le représentant w >= 0 pour rendre ce changement observable. Angle() utilise abs(w), tandis que Axis() garde le signe de la partie vectorielle : sans le test, l'axe et donc la vitesse s'inversent.
+
+Ce qu'aurait vu le casque : pendant une estimation, la tête serait prédite dans le mauvais sens; l'image suivante pourrait faire un petit saut inverse. Cette démonstration porte sur une rotation simulée dans la salle, pas sur un casque.

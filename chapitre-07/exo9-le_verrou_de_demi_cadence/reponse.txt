@@ -1,0 +1,5 @@
+Les deux écarts types : sans verrou, 7.388 ms; avec verrou, 5.789 ms. La seconde série est plus régulière de 1.599 ms, même si son maximum reste élevé.
+
+Ce que coûte le verrou : la moyenne passe de 29.155 à 36.608 ms, soit d'environ 34.3 à 27.3 images/s. Le verrou visait 30 images/s (deux périodes à 60 Hz), mais le rendu et la résolution du sommeil font que la cadence mesurée est plus basse.
+
+La décision du moteur : sur cet essai de bureau, le verrou réduit l'écart type mais augmente le temps moyen et n'élimine pas les pointes (max 77.994 ms). Un écran de bureau ne reproduit toutefois pas l'ASW d'un casque; ces mesures ne valident pas le confort VR.

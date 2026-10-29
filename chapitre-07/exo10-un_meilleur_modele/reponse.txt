@@ -1,0 +1,5 @@
+Où il gagne : sur les gestes rapide, lent et demi-tour, le modèle à accélération réduit les erreurs moyennes (0.223 à 0.124 deg, 0.011 à 0.005 deg, 0.947 à 0.550 deg). Les maxima correspondants restent respectivement 0.532, 0.019 et 2.693 deg.
+
+Où il perd : à l'arrêt brusque, son erreur moyenne est plus grande, 0.131 deg contre 0.114 deg; le maximum est de 2.500 deg pour les deux modèles.
+
+Pourquoi là : l'accélération estimée sur les trois dernières poses décrit le mouvement qui précédait l'arrêt; elle prolonge donc une accélération devenue fausse au moment où la tête s'immobilise. Ces résultats proviennent de la simulation 72 Hz, pas d'un casque.
