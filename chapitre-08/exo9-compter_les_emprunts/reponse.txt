@@ -1,0 +1,12 @@
+reussies = liberations lorsque la chaine est libre à la fin. 
+Si une image reste empruntée, reussies = liberations + 1. 
+Un second refusé compte comme refus, mais ne change pas cette relation.
+
+Mes trois nombres : la mesure d'une vraie minute de la boucle de 
+rendu n'a pas encore été effectuer. Les compteurs de l'exemple (5 emprunts 
+reussis, 6 refus, 4 liberations) ne sont pas une mesure d'une minute 
+et ne sont pas presentes comme mesures.
+
+Le chemin qui fuit : dans le code, la branche sortie se termine après 
+un reussi sans liberer l'image. Le prochain est alors 
+refusé et les trames suivantes restent bloquées.

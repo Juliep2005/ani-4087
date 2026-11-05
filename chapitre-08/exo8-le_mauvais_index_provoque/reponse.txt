@@ -1,0 +1,21 @@
+Les images paires et impaires : les trames impaires en mode D affichent 
+les positions 10, 30, 50 et 70 mm. Les trames paires en mode P 
+affichent l'image de la trame precedente : 10, 30, 50 et 70 mm. 
+Les positions se repetent de deux trames de suite et les sauts 
+sont entre 20 mm et 0 mm : c'est cette alternance qui provoque 
+le tremblement.
+
+Avec une seule image : tous les modes selectionnent le meme emplacement. 
+Pour n = 1, la sortie est :
+1 10 rien
+2 20 10
+3 30 10
+4 40 10
+5 50 10
+6 60 10
+7 70 10
+8 80 10
+
+La bonne lecture : apres ReleaseImage, l'index de la derniere image 
+liberee designe l'image qui vient d'etre peinte. En mode D, la 
+soumission lit cet index apres la liberation.

@@ -1,0 +1,14 @@
+Les cinq suites de six indices calculees par le modele sont :
+1 image, L=0 : 0 0 0 0 0 0
+1 image, L=1 : 0 0 0 0 0 0
+2 images, L=1 : 0 1 0 1 0 1
+2 images, L=2 : 0 1 0 1 0 1
+3 images, L=2 : 0 1 2 0 1 2
+Ces valeurs viennent du fichier trois.cpp et non d'une mesure de la vraie salle. 
+Le relevé des trente lignes de la vraie salle n'a encore été effectué.
+
+Les conflits disparaissent avec 1 image pour L=0, 2 images pour L=1 et 3 images pour L=2. 
+Dans ce modele, il faut L+1 images pour que l'emplacement ne soit pas encore lu par le compositeur.
+
+Sur le simulateur : Le compositeur lit après le rendu, donc L=0. Une seule image ne cree aucun conflit 
+et le cycle de trois images ne change pas le resultat visible du simulateur; le compositeur garde une image pendant plusieurs trames.
