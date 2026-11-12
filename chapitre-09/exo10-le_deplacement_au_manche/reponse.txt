@@ -1,0 +1,11 @@
+Décalage/tête : Le programme déplace le monde par un decalage accumule, 
+sans ecrire dans la pose de la tete suivie par le casque. 
+Pour l'exemple, le decalage final est (10, -20).
+
+Ce que la tête casserait : Ecrire dans la pose suivie entrerait en conflit avec le suivi 
+physique et fausserait la prediction de pose. Le joueur se deplace en decalant le monde; 
+la pose réelle de la tete reste lue, jamais modifiée.
+
+Les diagonales : Quand x et y valent tous deux 1 ou -1, le pas mesure v*sqrt(2), 
+environ 1,414 fois le pas cardinal. Pour l'eviter, il faut normaliser le vecteur du manche; 
+dans le cas diagonal, chaque composante est alors reduite par sqrt(2).
