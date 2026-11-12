@@ -1,0 +1,9 @@
+Ce qui change : Sur un casque réel, seule la table de correspondance entre les usages et les commandes physiques changerait. 
+Les actions declarees et le traitement des appuis resteraient identiques.
+
+Aucun nom de bouton : Le programme traite les usages SELECT, GRAB et MENU. 
+Les commandes physiques ne sont lues que dans les tables; elles ne figurent pas dans la logique des actions.
+
+L'action inactive : Si une table ne fournit pas de commande pour un usage, 
+l'action correspondante est inactive et ne peut pas produire d'appui. 
+On pourrait prendre une liaison manquante pour un bouton qui ne fonctionne pas.

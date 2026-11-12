@@ -1,5 +1,8 @@
-SAISIE : La paume represente la position physique de l'objet dans la main; c'est donc la pose a utiliser pour saisir. Dans l'exemple, l'objet 1 est a portee de la paume droite a la premiere tete.
+SAISIE : La paume represente la position physique de l'objet dans la main; 
+c'est la pose à utiliser pour saisir un objet. Dans l'énoncé, l'objet 1 est portée à la paume droite.
 
-POINTAGE : La visee est calibree par le constructeur pour pointer naturellement. Dans l'exemple, la visee droite selectionne l'objet 2, tandis que la paume selectionne l'objet 1, ce qui montre que ces poses ne sont pas interchangeables.
+POINTAGE : La visée est calibrée par le constructeur pour pointer naturellement. 
+Dans l'énoncé, la visée droite selectionne l'objet 2, tandis que la paume selectionne l'objet 1, ce qui montre que les poses ne sont pas interchangeables.
 
-ANGLE : Dans le simulateur, paume et visee gardent l'orientation de la tete; leurs directions avant sont donc paralleles et l'angle vaut 0 degre. Ce resultat n'est pas garanti sur un casque reel, dont les poses peuvent avoir des orientations differentes.
+ANGLE : Dans le simulateur, paume et visée gardent l'orientation de la tete; leurs directions avant sont paralleles et l'angle vaut 0 dégré. 
+Le resultat obtenu n'est pas garanti sur un casque reel, dont les poses peuvent être orientées differemment.
