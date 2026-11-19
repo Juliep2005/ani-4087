@@ -1,0 +1,4 @@
+Negligeable : A partir des ecarts mesures, les differences de position sont faibles par rapport au deplacement traite sur cinq images.
+Seuil : Avec d = 11 ms, un ecart de lacet depasse 1000 milliemes de degre avant une vitesse moyenne de 90.909 degres par seconde ; la reponse 
+de seuil est donc au moins 91 degres par seconde, arrondie a l'entier superieur.
+Le compositeur corrige l'ecart entre la pose du rendu et la pose relue lors de la reprojection, en tenant compte du mouvement de position et du lacet.

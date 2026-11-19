@@ -1,0 +1,6 @@
+Le simulateur signale JAMAIS et SI_RENDU, ainsi qu'une chaine absente dans la projection avec g ou d a zero.
+Le simulateur tait : Il ne signale pas la reprojection incorrecte causee par un mauvais instant ou une mauvaise pose, 
+ni le decalage cause par un mauvais espace.
+Le simulateur doit etre plus severe que le vrai casque parce qu'il refuse les fins incoherentes et avertit des 
+chaines oubliees avant qu'elles deviennent visibles. Dans la sortie, la ligne avec l'oeil gauche sans chaine est signalee, 
+meme si le casque peut seulement montrer OEIL_NOIR_G.

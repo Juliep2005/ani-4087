@@ -1,0 +1,4 @@
+Le chemin fautif : C saute l'appel EndFrame, la trame reste ouverte et le wait suivant est refuse.
+Pourquoi le destructeur : Parceque GardeTrame appelle End dans son destructeur, donc continue, return et 
+tous les autres chemins quittent la frame proprement.
+Sans garde, R saute EndFrame et les images suivantes; avec garde, le destructeur ferme la trame avant que la boucle s'arrete.
