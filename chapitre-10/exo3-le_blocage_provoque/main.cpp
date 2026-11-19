@@ -28,6 +28,7 @@ int main()
         std::string waitResult = "OK";
         std::string beginResult = "OK";
         std::string endResult = "-";
+        bool beginAccepted = false;
 
         if (frameOpen)
         {
@@ -55,18 +56,16 @@ int main()
         else
         {
             frameOpen = true;
+            beginAccepted = true;
         }
 
-        if (render)
+        if (signs[image - 1] == '1' && !beginAccepted)
+        {
+            ++perdues;
+        }
+        else if (render)
         {
             ++rendues;
-        }
-        else
-        {
-            if (signs[image - 1] == '1')
-            {
-                ++perdues;
-            }
         }
 
         const std::string renderText = render ? "OUI" : "NON";
