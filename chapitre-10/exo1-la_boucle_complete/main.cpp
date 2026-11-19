@@ -176,7 +176,12 @@ int main()
         }
     }
 
-    if (imageCount != 0)
+    if (imageCount == 0)
+    {
+        std::cout << "JUSTES 0\n";
+        std::cout << "FAUTIVES 0\n";
+    }
+    else
     {
         std::cout << "JUSTES " << justes << '\n';
         std::cout << "FAUTIVES " << fautives << '\n';

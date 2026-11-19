@@ -1,7 +1,5 @@
-#include <cstdlib>
 #include <cstdint>
 #include <iostream>
-#include <algorithm>
 
 int main()
 {
@@ -36,8 +34,18 @@ int main()
         {
             ++fausses;
         }
-        pireCasque = std::max(pireCasque, std::llabs(casque));
-        pireSimulateur = std::max(pireSimulateur, std::llabs(simulateur));
+        const std::int64_t absoluteCasque =
+            casque < 0 ? -casque : casque;
+        const std::int64_t absoluteSimulateur =
+            simulateur < 0 ? -simulateur : simulateur;
+        if (absoluteCasque > pireCasque)
+        {
+            pireCasque = absoluteCasque;
+        }
+        if (absoluteSimulateur > pireSimulateur)
+        {
+            pireSimulateur = absoluteSimulateur;
+        }
     }
 
     if (imageCount == 0)

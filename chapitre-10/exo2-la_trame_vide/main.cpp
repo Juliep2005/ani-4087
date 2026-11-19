@@ -27,7 +27,8 @@ int main()
         ++fins;
         if (signs[image - 1] == '1')
         {
-            std::cout << image << " OUI " << (image - 1) << ' ' << nextImage << '\n';
+            std::cout << image << " OUI 1 " << (image - 1)
+                      << ' ' << nextImage << '\n';
             ++rendues;
             nextImage = (nextImage + 1) % chainSize;
         }

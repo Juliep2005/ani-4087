@@ -15,11 +15,22 @@ Pose rotateAndCompose(const Pose& pose, const Pose& anchor)
 {
     std::int64_t rx = pose.x;
     std::int64_t rz = pose.z;
-    switch (pose.yaw)
+    switch (anchor.yaw)
     {
-    case 1: rx = pose.z; rz = -pose.x; break;
-    case 2: rx = -pose.x; rz = -pose.z; break;
-    case 3: rx = -pose.z; rz = pose.x; break;
+    case 1:
+        rx = pose.z;
+        rz = -pose.x;
+        break;
+    case 2:
+        rx = -pose.x;
+        rz = -pose.z;
+        break;
+    case 3:
+        rx = -pose.z;
+        rz = pose.x;
+        break;
+    default:
+        break;
     }
     return {'L', 'S',
             anchor.x + rx,
